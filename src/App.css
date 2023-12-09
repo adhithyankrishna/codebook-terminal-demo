@@ -1,38 +1,322 @@
-.App {
+.App{
+  display: flex;
+  flex-direction: row;
+  color: rgb(27, 196, 21);
+  
+}
+.main-heading{
+  font-size: 17vw;
+  padding-left: 7%;
+  margin-top:0%
+  
+}
+.demo{
+  display: flex;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 4%;
+  flex-direction: row;
+  justify-content: center;
+}
+.desc{
+  color: aliceblue;
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+.des{
+  font-size: 3em;
+}
+.list{
+  color: rgb(240, 169, 78);
+}
+
+.codebook{
+  margin-left: 2%;
+  margin-top: 10px;
+  margin-right: 5%;
+  height: 23vh;
+  width: 40vw;
+}
+
+.title{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.high {
+      width: 40vw;
+      height: 20vh;
+      
+    }
+  
+    .editor {
+      margin-left: 0%;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.progressbutton {
+    height: 5vh;
+    width: 20%;
+   margin-left: 38%;
+   background-color: rgb(166, 168, 189);
+   margin-bottom: 3%;
+   margin-top: 1%;
+   font-size:28px;
+   border-radius: 24px;
+   
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .progressbutton:hover{
+  background-color: rgb(19, 226, 71);
+ }
+
+ .footer{
   display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  
+ }
+
+ .progressarea{
+  display: flex;
+  margin: 1%;
+  padding: 2%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color:rgb(48, 47, 47);
+  border-radius: 24px;
+ }
+
+ .demo{
+  background-color: rgb(48, 47, 47);
+    display: flex;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 24px;
+    flex-direction: row;
+    justify-content: center;
+
+ }
+
+ .inputa{
+  display: flex;
+  flex-direction: row;
+ 
+  
+
+ }
+
+ .textinput{
+  height: 4vh;
+  width: 20vw;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 24px;
+    font-weight: 600;
+    outline: none;
+      border: none;
+      border-radius: 12px;
+  
+
+ }
+
+ .button{
+  height: 4.5vh;
+  width: 10vw;
+  font-size: 24px;
+  align-content: center ;
+  font-weight: 600;
+  margin-right: 3%;
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(44, 255, 97);
+  
+ }
+
+ .textoutput {
+   height: 4vh;
+   width: 20vw;
+   outline: none;
+   border: none;
+   font-size: 24px;
+   font-weight: 600;
+  border-radius: 12px;
+
+
+ }
+
+ .footer{
+  height: 20vh;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  
+ }
+
+ .iamges{
+  display: flex;
+  flex-direction: row;
   color: white;
-}
+  
+  
+ }
+ .name{
+  color: white;
+  font-size: 24px;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .gitlogo{
+  width: 20%;
+  margin-left: 40%;
+ }
+ .npmlogo{
+  width: 20%;
+  margin-left: 10%;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .follow{
+  color: white;
+  font-size: 1.5em;
+  margin-top: 1.3%;
+  margin-left: 10%;
+ }
+@media (max-width: 767px) {
+  .main-heading{
+    padding: 5%;
+    font-size: 4.5em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .desc{
+    padding: 7%;
+    justify-content: center;
+    font-size: 1em;
   }
+
+    .demo {
+      background-color: rgb(66, 62, 57);
+      display: flex;
+      margin: 1%;
+      padding: 2%;
+      border-radius: 4%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .codebook{
+      height: 400px;
+      width: 40vw;
+      
+    }
+
+    .high{
+      width: 80vw;
+      margin-left: 10%;
+      ;
+      
+    }
+    .editor{
+      margin-left:2%;
+    }
+  
+    .codebook {
+     margin-left: 2%;
+     margin-top: 10px;
+    margin-right: 5%;
+    height: 30vh;
+    width: 88vw;
+   }
+   .progressbutton{
+    height: 5vh;
+    width: 70%;
+    margin-left: 13%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+   }
+   .progressbutton:hover{
+    background-color: rgb(166, 168, 189);
+   }
+   .inputa{
+    display: flex;
+    margin: 2%;
+    background-color: rgb(48, 47, 47);
+    flex-direction: column;
+    justify-content: center;
+   }
+   .textinput{
+    width: 80%;
+    height: 4vh;
+    background-color: rgb(228, 218, 218);
+    margin-left: 8%;
+    margin-top: 1%;
+    margin-bottom:3% ;
+    border-radius: 10px;
+   }
+   .textoutput{
+      width: 80%;
+      height: 4vh;
+      background-color: rgb(255, 251, 244);
+      margin-left: 8%;
+      margin-top: 1%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3%;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+
+     
+   }
+
+   .button{
+    width: 30%;
+    height: 4vh;
+    margin-left: 33%;
+    margin-bottom: 2%;
+    background-color: rgb(52, 197, 33);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+   }
+
+     .footer {
+       display: flex;
+       height: 20vh;
+       flex-direction: column;
+       align-items: flex-start;
+       background-color: rgba(74, 75, 117, 0);
+  
+     }
+
+     .name{
+      padding: 7%;
+      font-size: 18px;
+      color: aliceblue;
+      
+     }
+
+         .footer {
+           height: 4vh;
+         }
+     .iamges{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 10%;
+      padding-bottom:5% ;
+     }
+     .gitlogo{
+      margin-left: 10%;
+      width: 15%;
+      margin-bottom: 10%;
+     }
+     .npmlogo{
+      margin-left: 10%;
+      width: 15%;
+      margin-bottom: 10%;
+     }
+
+     .follow{
+      color: rgb(0, 253, 84);
+      margin-bottom: 10%;
+     }
+    
 }
