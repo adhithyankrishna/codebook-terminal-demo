@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+<!-- Welcome to CodeBook Terminal! -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CodeBook Terminal 🚀
 
-## Available Scripts
+[![GitHub stars](https://img.shields.io/github/stars/adhithyankrishna/codebook-terminal?style=social)](https://github.com/adhithyankrishna/codebook-terminal/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/adhithyankrishna/codebook-terminal?style=social)](https://github.com/adhithyankrishna/codebook-terminal/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/adhithyankrishna/codebook-terminal)](https://github.com/adhithyankrishna/codebook-terminal/issues)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### 🌈 Welcome to the Colorful World of CodeBook Terminal!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Elevate your coding experience with CodeBook Terminal – where functionality meets flair in the most colorful way possible! 🎨💻
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Features
 
-### `npm test`
+- **Sleek Design:** A visually appealing terminal that turns coding into an immersive journey.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Customizable Themes:** Tailor the appearance to match your coding personality.
 
-### `npm run build`
+- **User-Friendly Interface:** Whether you're a pro or just starting, our terminal makes coding stylish and intuitive.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Dynamic Commands:** Explore a plethora of available commands, each with its own distinct flavor.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+1. **Installation:**
+    ```bash
+    npm install codebook-terminal
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Usage:**
+    ```javascript
+    import CodebookTerminal from "codebook-terminal";
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    // Your code here
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Customization:**
+    Explore the `themes` folder for exciting theme options!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Let's Get Coding! 🚀
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ready to unleash your creativity? Dive into CodeBook Terminal and let every line of code become a stroke of brilliance! 🌟
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+# Terminal Component README
 
-### Code Splitting
+Welcome to the README for the Terminal component! 🚀 This versatile React component allows you to create an interactive terminal experience in your applications.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Props
 
-### Analyzing the Bundle Size
+### `setUserInput`
+- **Type:** Function
+- **Description:** Callback function to handle user input.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### `userOutput`
+- **Type:** String
+- **Description:** Output from user commands or responses.
 
-### Making a Progressive Web App
+### `mode`
+- **Type:** String
+- **Description:** Determines the mode of the terminal (e.g., "command" or "progressBar").
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### `userCommand`
+- **Type:** Object
+- **Description:** Custom user commands to extend the functionality of the terminal.
 
-### Advanced Configuration
+### `background`
+- **Type:** String (Hex Color)
+- **Default:** `#292929`
+- **Description:** Background color of the terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### `welcomeMessage`
+- **Type:** String
+- **Default:** "Welcome to the Terminal! 🚀\nFeel free to explore and type 'help' for a list of available commands."
+- **Description:** Initial message displayed when the terminal is loaded.
 
-### Deployment
+### `textColor`
+- **Type:** String (Hex Color)
+- **Default:** `#dbd8d5`
+- **Description:** Text color of the terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `promtColor`
+- **Type:** String (Hex Color)
+- **Default:** `#d6994a`
+- **Description:** Prompt text color.
 
-### `npm run build` fails to minify
+### `promtText`
+- **Type:** String
+- **Default:** "$"
+- **Description:** Text displayed in the prompt.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `progressBarColor`
+- **Type:** String (Hex Color)
+- **Default:** `#50f50f`
+- **Description:** Color of the progress bar.
+
+### `progres`
+- **Type:** Number
+- **Default:** 0
+- **Description:** Progress value for the progress bar.
+
+## Example Usage
+
+```jsx
+import CodebookTerminal from "codebook-terminal";
+
+const MyTerminalApp = () => {
+  return (
+    <CodebookTerminal
+      setUserInput={handleUserInput}
+      userOutput={outputMessage}
+      mode="command"
+      userCommand={{ customCommand: { description: "Custom command", usage: "customCommand", fn: () => {} } }}
+      background="#292929"
+      welcomeMessage="Welcome to My App!"
+      textColor="#dbd8d5"
+      promtColor="#d6994a"
+      promtText="$"
+      progressBarColor="#50f50f"
+      progres={50}
+    />
+  );
+};
+
+export default MyTerminalApp;
+
+
+
+``````
+![Alt text]
+
+
+###Progress Bar 🎉🎉🎉
+
+![Alt text](ezgif.com-video-to-gif.gif)
+
+### 🤝 Contributing
+
+We welcome contributions! Feel free to open issues, submit pull requests, or share your feedback.
+
+### 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+### 👤 Author
+
+
+[Adithyan M]
+
+---
+
+Enjoy coding with CodeBook Terminal – where coding meets creativity!
+
+[![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)](https://github.com/adhithyankrishna/codebook-terminal)
